@@ -1,0 +1,415 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+
+}
+
+body{
+    background-color: var(--primary-color);
+    background-size: cover;
+    margin: 30px;
+   
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --primary-color: rgb(4,91,98);
+    --secondary-color:rgb(211, 233, 241);
+    --teritary-color:white;
+    --con-color:black;
+    --nav-color: rgb(3,73,78);
+}
+
+.dark-theme{
+    --primary-color: black;
+    --secondary-color:rgb(107, 101, 101);
+    --teritary-color: white;
+    --con-color:white;
+    --nav-color: black;
+}
+
+
+/*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}*/
+
+.navbar{
+    margin-bottom: 10px;
+    background-color: var(--nav-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-link{
+    color: whitesmoke;
+}
+
+.nav-link:hover{
+    color: rgb(156, 184, 184);
+}
+
+.navbarNavDropdown{
+     border:color var(--teritary-color);
+}
+
+.fa-bars{
+    color: white; 
+    border: 1px solid white; 
+    border-radius:  5px ; 
+}
+
+.mode{
+    border: 1px solid white;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.mode:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 15px cyan, 0 0 25px cyan;
+}
+
+.home{
+    color: white;
+}
+
+.about{
+    color: var(--teritary-color);
+    margin-top: 50px;
+}
+
+.abcon{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+    background-color: var(--secondary-color) ;
+    transition: 0.18s;
+    padding: 0px;
+    color:var(--con-color) ;
+    overflow-x: scroll;
+}
+
+.abcon::-webkit-scrollbar{
+    display: none;
+}
+
+.abcon:hover{
+   /* transform: scale(1.1); */
+   box-shadow: 0 0 5px cyan,
+        0 0 15px cyan, 0 0 25px cyan;
+    background: whitesmoke;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.ncon{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.cont{
+    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*.Hpic{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+}*/
+
+
+.propic{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profilepic{
+    height: 100%;
+    width: 100%;
+    margin: 50px;
+    border: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    margin-left: 120px;
+    border-radius: 10px;
+}
+
+@media(max-width:1000px) {
+    .profilepic{
+        height: 70%;
+        width: 70%;
+        margin: 50px;
+        border: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+        border-radius: 10px;
+    }
+
+    .propic{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+
+.homecont{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.hname{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.pname{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+
+
+.about{
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+table{
+    width: 100%;
+    margin: 30px;
+    padding: 1px;
+    font-size: 18px;
+}
+
+.educon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.eduimg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.eduimg1{
+    height: 150px;
+    width: 350px;
+    margin: 30px;
+}
+
+/* Skills Page Starts Here*/
+
+.sk{
+    background-color:var(--primary-color);
+    background-size: cover;
+}
+
+.skcon{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+    background-color:var(--secondary-color);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 1s;
+    color:var(--con-color) ;
+    
+    
+}
+
+.skcon:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 5px cyan,
+        0 0 15px cyan, 0 0 25px cyan;
+    background: whitesmoke;
+    color: black;
+}
+
+.skconh{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inskprog{
+    height: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.skprog{
+    border: 1px solid var(--primary-color);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+}
+/* Skills Page Ends Here*/
+/* Certification Page Css Starts Here */
+
+.certi{
+    background-color:var(--primary-color);
+}
+
+.nav-pills{
+      width: 50%;
+      padding: 10px;
+      background-color: var(--nav-color);
+      border-radius: 10px;
+}
+
+@media (max-width:1080px) {
+    .nav-pills{
+        width: 80%;
+        font-size: 80%;
+  }
+}
+
+.nav-items{
+    width: 50%;
+}
+
+
+.chead{
+    font-size: 500%;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    margin-top: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--teritary-color);
+}
+
+.cpara{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--teritary-color);
+}
+
+@media (max-width:1080px) {
+    .chead{
+        font-size: 250%;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px black;
+        margin-top: 70px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--teritary-color);
+    }
+}
+
+.techhead{
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--teritary-color);
+}
+
+.non-techhead{
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--teritary-color);
+}
+
+.ccont{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+    background-color:var(--secondary-color);
+    transition: 1s;
+    color:var(--con-color) ;
+    
+}
+
+.ccont:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 5px cyan,
+        0 0 15px cyan, 0 0 25px cyan;
+    background: whitesmoke;
+    color: black;
+}
+
+.cimg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.cimg1{
+    height: 180px;
+    width: 350px;
+    margin: 30px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+}
+
+
+.ctable{
+    width: 100%;
+    margin: 30px;
+    padding: 1px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cercon{
+    margin: 30px;
+}
+
+
+/* Certification Page Css Ends Here */
+div{
+ align-items: center;
+}
+footer{
+   text-align: center;  
+    height: 10px; 
+}
+
+.collapse navbar-collapse ul li a i{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.fa-solid fa-house{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
